@@ -45,7 +45,7 @@ body{
 
 .page-container {
   margin-top: 55px;
-  background-color: rgb(200, 200, 200);
+  /* background-color: rgb(200, 200, 200); */
   display: flex;
   justify-content: space-between;
   align-items: center; 
@@ -80,6 +80,7 @@ body{
 .page-container img {
   max-width: 100%;
   height: auto;
+  border-radius: 50px;
 }
 
 .page-left{
@@ -141,10 +142,11 @@ body{
  */
 
  .slide-container{
-  background-color: rgb(200, 200, 200);
+  /* background-color: rgb(200, 200, 200); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 110px;
  }
  .slide{
   padding:0px 50px;
@@ -155,9 +157,14 @@ body{
  }
  .slide img{
   width: 400px;
+  border-radius: 50px;
+ }
+ .slide img:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+
  }
  .h2-segment{
-  background-color: rgb(200, 200, 200);
+  /* background-color: rgb(200, 200, 200); */
   padding: 20px;
  }
  h2{
