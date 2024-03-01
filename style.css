@@ -103,10 +103,10 @@ body{
   margin-top: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .page-left,
   .page-right{
-    flex-basis: 90%;
+    flex-basis: 100%;
   }
 }
 
@@ -194,9 +194,9 @@ body{
   padding: 100px 0;
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 1000px) {
   .about-me-container {
-    width: 100%; 
+    width: 90%; 
   }
 }
 .about-me-container h3,
