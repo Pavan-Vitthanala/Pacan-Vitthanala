@@ -110,41 +110,6 @@ body{
   }
 }
 
-/*
-.slide {
-  display: none;
-}
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.prev, .next {
-  position: absolute;
-  top: 1000px;
-  transform: translateY(-50%);
-  width: auto;
-  padding: 16px;
-  color: rgb(117, 0, 0);
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
- */
 
  .slide-container{
   /* background-color: rgb(200, 200, 200); */
