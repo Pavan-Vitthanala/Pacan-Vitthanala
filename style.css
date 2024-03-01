@@ -103,10 +103,10 @@ body{
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .page-left,
   .page-right{
-    flex-basis: 100%;
+    flex-basis: 90%;
   }
 }
 
