@@ -7,6 +7,13 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, white, rgb(200, 200, 200), white);
+  color: black
+}
+
+.dark-mode{
+  color: #fff;
+  background: linear-gradient(to bottom, black, rgb(51, 51, 51));
 }
 
 .header-container{
@@ -22,8 +29,16 @@ body{
   z-index: 100;
 }
 
+.dark-mode .header-container{
+  background-color: rgb(200, 200, 200);
+}
+
 .header-container a{
   color: white;
+}
+
+.dark-mode .header-container a{
+  color: black;
 }
 
 .left-side{
@@ -35,12 +50,47 @@ body{
   cursor: pointer;
 }
 .right-side{
-  width: 110px;
+  width: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-right: 20px;
+}
+
+.background-box{
+  width: 25%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  transition-delay: 0.4s;
+}
+.toggle-box{
+  width: 50px;
+  height: 25px;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 1000px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.circle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  background-color: #000000;
+  border-radius: 1000px;
+  margin: 2px;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]{
+  display: none;
 }
 
 .right-side div{
@@ -74,6 +124,11 @@ body{
   width: 120px;
   height: 40px;
   cursor: pointer;
+}
+
+.dark-mode .page-container button{
+  color: black;
+  background-color: rgb(200, 200, 200);
 }
 
 .page-container img {
@@ -216,6 +271,11 @@ footer {
   text-align: center;
 }
 
+.dark-mode footer{
+  color: black;
+  background-color: rgb(200, 200, 200);
+}
+
 .contact-details {
   margin-top: 10px;
 }
@@ -224,6 +284,10 @@ footer {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
+}
+
+.dark-mode .contact-details a{
+  color: black;
 }
 
 .contact-details i {
