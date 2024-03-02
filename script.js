@@ -1,3 +1,4 @@
+
 let imageCard1 = document.getElementById("slide-1");
 let imageCard2 = document.getElementById("slide-2");
 let imageCard3 = document.getElementById("slide-3");
@@ -100,10 +101,29 @@ function handleScreenSize() {
     window.addEventListener('resize', myEventHandlerMedium);
     myEventHandlerMedium();
   } else {
-    window.removeEventListener('resize', myEventHandler);
+    window.removeEventListener('resize', myEventHandlerLarge, myEventHandlerMedium);
   }
 }
 
 handleScreenSize();
 
 window.addEventListener('resize', handleScreenSize);
+
+
+
+    let toggleBox = document.querySelector(".toggle-box");
+    let circle = document.querySelector(".circle");
+    let checkbox = document.getElementById("checkbox");
+
+    toggleBox.onclick = function(){
+        if(checkbox.checked){
+            circle.style.transform = "translateX(25px)";
+            circle.style.backgroundColor = "#fff";
+            toggleBox.style.backgroundColor = "#000";
+            document.body.classList.toggle('dark-mode');
+        }else{
+            circle.style.transform = "translateX(0px)";
+            circle.style.backgroundColor = "#000";
+            toggleBox.style.backgroundColor = "#fff";
+        }
+    }
